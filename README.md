@@ -1,6 +1,5 @@
 <div align="center">
-
-![SpellCheck Logo](./src/assets/spellcheck.png)
+<img src="./src/assets/spellcheck.png" alt="SpellCheck Logo" width="200"/>
 
 # SpellCheck
 Hear a word and spell it; the faster the better (React + ChakraUI)\
