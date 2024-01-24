@@ -1,7 +1,10 @@
-export const TOTAL_ROUND_COUNT   = 10
-export const ROUND_TIME          = 15
-export const BASE_POINTS         = 100
-export const BASE_POINT_MODIFIER = 25
+import { RoundTime } from "./definitions"
+
+export const TOTAL_ROUND_COUNT     = 10
+export const ROUND_TIME            = 3
+export const START_TIME            = 0
+export const BASE_POINTS           = 100
+export const BASE_POINT_MODIFIER   = 25
 
 /**
  * Dictionary for each keybind.

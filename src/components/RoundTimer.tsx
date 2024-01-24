@@ -1,46 +1,46 @@
 import { useAtom } from 'jotai'
 import React, { useEffect } from 'react'
-import { currentWordAtom, roundTimerAtom, roundTimerIdAtom, timerStateAtom } from '../atoms'
+import { currentWordAtom, roundOutcomeStateAtom, roundTimeAtom, roundTimerIdAtom, timerStateAtom } from '../atoms'
 import { Text } from '@chakra-ui/react'
-import { ROUND_TIME } from '../declarations'
-import { TimerState } from '../definitions'
+import { ROUND_TIME, START_TIME } from '../declarations'
+import { RoundOutcomeState, TimerState } from '../definitions'
+import { isRoundTimeUp } from "../utils"
 
 export default function RoundTimer() {
-  const [ time, setTime ] = useAtom( roundTimerAtom )
+  const [ time, setTime ] = useAtom( roundTimeAtom )
   const [ timerState, setTimerState ] = useAtom( timerStateAtom )  
   const [ timerIntervalId, setTimerIntervalId ] = useAtom( roundTimerIdAtom )
-  const [ currentWord, setCurrentWord ] = useAtom( currentWordAtom )
+  const [ roundOutcomeState, setRoundOutcomeState ] = useAtom( roundOutcomeStateAtom )
 
   useEffect( () => {
-    if ( currentWord === null ) return
-    setTimerState( TimerState.STOPPED )
-  }, [ currentWord ] )
+    if ( ROUND_TIME - time !== 0 ) return
+    setTimerState( TimerState.PAUSED )
+    setRoundOutcomeState( RoundOutcomeState.LOSS )
+  }, [ time ] )
 
   useEffect( () => {
-    if ( timerState === TimerState.PAUSED ) return
-    else if ( timerState === TimerState.STOPPED )
+    if ( roundOutcomeState === RoundOutcomeState.ONGOING ) return
+    setTimerState( TimerState.PAUSED )
+  }, [ roundOutcomeState ] )
+
+  useEffect( () => {
+    if ( roundOutcomeState !== RoundOutcomeState.ONGOING ) return
+    setTime( START_TIME )
+  }, [ roundOutcomeState ] )
+
+  useEffect( () => {
+    if ( timerState !== TimerState.STARTED )
     {
       if ( timerIntervalId !== null )
         clearInterval( timerIntervalId )
       setTimerIntervalId( null )
-      setTime( ROUND_TIME )
       return
     }
     
-    // todo: do we need millis?
-    // let millis  = 0
-    let seconds = -1
+    let currentTime = 0
     const newId = setInterval( () => {
-      if ( ROUND_TIME - seconds === 0 )
-      {
-        setTimerState( TimerState.PAUSED )
-        return
-      }
-      // millis += 10
-      // if ( millis >= 1_000 ) seconds++
-      seconds++
-
-      setTime( ROUND_TIME - seconds )
+      currentTime++
+      setTime( currentTime )
     }, 1_000 )
 
     setTimerIntervalId( newId )
@@ -49,7 +49,7 @@ export default function RoundTimer() {
 
   return (
     <Text color="#ff0000">
-      :{time}s
+      :{ROUND_TIME - time}s
     </Text>
   )
 }

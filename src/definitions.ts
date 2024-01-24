@@ -5,6 +5,11 @@ export type SpellCheckWord = {
   context: string
 } | null
 
+export interface RoundTime {
+  seconds: number
+  millis: number
+}
+
 export enum TimerState {
   STOPPED = 0,
   STARTED,
@@ -12,7 +17,12 @@ export enum TimerState {
 }
 
 export enum RoundOutcomeState {
-  UNSTARTED = 0,
+  ONGOING = 0,
   WIN,
   LOSS,
+}
+
+export enum GameState {
+  ONGOING = 0,
+  ENDED
 }

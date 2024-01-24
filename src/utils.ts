@@ -1,10 +1,10 @@
-import { BASE_POINTS, BASE_POINT_MODIFIER } from "./declarations";
-import { SpellCheckWord } from "./definitions";
+import { BASE_POINTS, BASE_POINT_MODIFIER, ROUND_TIME } from "./declarations";
+import { RoundTime, SpellCheckWord } from "./definitions";
 
 export function formatWordContextForSpeech( currentWord: SpellCheckWord )
 {
   if ( currentWord === null ) return ""
-  return `${currentWord.word}; as in "${currentWord.context.replace( currentWord.word, `*${currentWord.word}*` )}"`
+  return `${currentWord.word}; as in: "${currentWord.context.replace( currentWord.word, `*${currentWord.word}*` )}"`
 }
 
 /**
@@ -21,10 +21,10 @@ export function compareStrings( a: string, b: string )
   return a.toLowerCase().trim() === b.toLowerCase().trim()
 }
 
-export function calculateRoundPoints( timeRemaining: number )
+export function calculateRoundPoints( roundTime: number )
 {
-  if ( timeRemaining === 0 ) return 0
-  return BASE_POINTS + ( timeRemaining * BASE_POINT_MODIFIER )
+  if ( isRoundTimeUp( roundTime ) ) return 0
+  return BASE_POINTS + ( ROUND_TIME - roundTime ) * BASE_POINT_MODIFIER
 }
 
 export function wasUserCorrect( userInput: string, currentWord: SpellCheckWord )
@@ -43,4 +43,49 @@ export function wasUserCorrect( userInput: string, currentWord: SpellCheckWord )
       return true
   
   return false
+}
+
+/**
+ * @param size How many items to retrieve, default is 1
+ * @param list The list to sample from
+ * @param allowDuplicates whether you accept duplicates in the sample, default is false
+ */
+export function randomSample( list: any[], size: number = 1, allowDuplicates: boolean = false ): any[] | any
+{
+  if ( size === 1 ) return list[ randomInt( list.length ) ]
+
+  const sample: any[] = []
+
+  while ( sample.length < size )
+  {
+    const candidate = list[ randomInt( list.length ) ]
+    if ( !allowDuplicates && sample.includes( candidate ) ) continue
+
+    sample.push( candidate )
+  }
+
+  
+
+  return sample
+}
+
+/**
+ * Generate a number between max and min
+ * @param max exclusive
+ * @param min default is 0
+ */
+export function randomInt( max: number, min: number = 0, )
+{
+  return Math.floor( Math.random() * (max - min) ) + min
+}
+
+export function isRoundTimeUp( currentTime: number )
+{
+  return ROUND_TIME - currentTime === 0
+}
+
+export function getRoundTimeDifference( startTime: number, rounding: number = 3 )
+{
+  // ! - this wont round properly
+  return ( ( new Date().getTime() - startTime ) / 1_000 ).toFixed( rounding )
 }

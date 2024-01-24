@@ -1,29 +1,30 @@
 import { Button } from '@chakra-ui/react'
 import React, { MutableRefObject, ReactNode, useEffect, useRef, useState } from 'react'
-import { currentWordAtom, timerStateAtom } from '../atoms'
+import { currentWordAtom, hasAudioPlayedOnceAtom, roundOutcomeStateAtom, roundStartTimestampAtom, timerStateAtom } from '../atoms'
 import { useAtom } from 'jotai'
 import { formatWordContextForSpeech } from '../utils'
 import { KEYBINDS } from '../declarations'
 import { useTimerReset } from '../contexts/RoundTimerContext'
-import { TimerState } from '../definitions'
+import { RoundOutcomeState, TimerState } from '../definitions'
 
-interface Props {
-  _inputRef: ReactNode | React.MutableRefObject<ReactNode>
-}
 
-export default function CurrentWordAudioPlayer( { _inputRef }: Props ) {
-  const [ currentWord ]                       = useAtom( currentWordAtom )
+export default function CurrentWordAudioPlayer() {
+  const [ currentWord ] = useAtom( currentWordAtom )
+  const [ roundStartTimestamp, setRoundStartTimestamp ] = useAtom( roundStartTimestampAtom )
+  const [ roundOutcomeState ] = useAtom( roundOutcomeStateAtom )
 
   const [ timerState, setTimerState ] = useAtom( timerStateAtom )
   const [ audioPlaying, setAudioPlaying ] = useState( false )
+  const [ hasAudioPlayedOnce, setHasAudioPlayedOnce ] = useAtom( hasAudioPlayedOnceAtom )
   const _playAudioButton = useRef( null )
 
-  /** Handle word changes */
+  /** Handle round ending */
   useEffect( () => {
-    if ( currentWord === null ) return
+    if ( roundOutcomeState !== RoundOutcomeState.ONGOING ) return
     window.speechSynthesis.cancel()
     setAudioPlaying( false )
-  }, [ currentWord ] )
+    setHasAudioPlayedOnce( false )
+  }, [ roundOutcomeState ] )
 
   /** Handle Keybinds */
   useEffect( () => {
@@ -40,13 +41,14 @@ export default function CurrentWordAudioPlayer( { _inputRef }: Props ) {
   {
     if ( audioPlaying ) return
 
-    _inputRef?.current?.focus()
+    setHasAudioPlayedOnce( true )
 
     const utterThis = new SpeechSynthesisUtterance( formatWordContextForSpeech( currentWord ) )
     utterThis.addEventListener( "end", () => {
       setAudioPlaying( false )
     } )
     
+    setRoundStartTimestamp( new Date().getTime() )
     setTimerState( TimerState.STARTED )
     setAudioPlaying( true )
     window.speechSynthesis.speak( utterThis )

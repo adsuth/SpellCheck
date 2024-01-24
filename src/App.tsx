@@ -1,44 +1,62 @@
+import { Alert, Center, Stack } from "@chakra-ui/react"
 import { useAtom } from "jotai"
-import { currentWordAtom, roundOutcomeStateAtom, roundPointsAtom, roundTimerAtom } from "./atoms"
 import { useEffect } from "react"
-import GameFormInput from "./components/GameFormInput"
+import { allWordsAtom, currentWordAtom, gameStateAtom, gameTotalRoundCountAtom, gameWordsAtom, roundNumberAtom, roundOutcomeStateAtom } from "./atoms"
 import GameHeader from "./components/GameHeader"
-import { Alert, Center, Container, Stack } from "@chakra-ui/react"
+import GameBody from "./components/GameBody"
 import SiteHeader from "./components/SiteHeader"
-import { calculateRoundPoints } from "./utils"
-import GamePoints from "./components/GamePoints"
-import { RoundOutcomeState } from "./definitions"
+import { GameState, RoundOutcomeState } from "./definitions"
+import { randomSample } from "./utils"
+import { TOTAL_ROUND_COUNT } from "./declarations"
 
 
 function App() 
 {
-  const [ , setCurrentWord ] = useAtom( currentWordAtom )
-  const [ timeLeft ]    = useAtom( roundTimerAtom )
-  const [ roundOutcome ]   = useAtom( roundOutcomeStateAtom )
-  const [ roundPoints ] = useAtom( roundPointsAtom )
+  const [ gameState, setGameState ] = useAtom( gameStateAtom )
+  const [ gameWords, setGameWords ] = useAtom( gameWordsAtom )
+  const [ allWords, setAllWords ] = useAtom( allWordsAtom )
+  const [ roundOutcomeState ] = useAtom( roundOutcomeStateAtom )
+  const [ currentWord, setCurrentWord ] = useAtom( currentWordAtom )
+  const [ totalRoundCount, setTotalRoundCount ] = useAtom( gameTotalRoundCountAtom )
+  const [ roundNumber ] = useAtom( roundNumberAtom )
 
-  // temp, delete
-  useEffect( () => { setCurrentWord( {word: "Suspicious", variations: [], context: "Red is acting suspicious"} ) }, [] )
+  // todo: fetch words from file, store in atom
+  useEffect( () => { 
+    const dummyWords = [
+      { word: "loose", context: "a loose thread" },
+      { word: "concede", context: "to concede defeat" },
+      { word: "idolize", variations: ["idolise"], context: "children idolise their heroes" },
+    ]
+    setAllWords( dummyWords )
+  }, [] )
 
-  function fetchRoundOutcomeAlert()
-  {
-    if ( roundOutcome === RoundOutcomeState.UNSTARTED ) return <></>
+  // ! - error handle for getting words
+  useEffect( () => {
+    if ( allWords === null ) return console.error( "Could not load words..." )
+    const newTotalRoundCount = ( allWords.length < TOTAL_ROUND_COUNT ) ? allWords.length : TOTAL_ROUND_COUNT 
+    setTotalRoundCount( newTotalRoundCount )
+    setGameWords( randomSample( allWords, newTotalRoundCount ) )
+  }, [ allWords ] )
 
-    else if ( roundOutcome === RoundOutcomeState.WIN ) 
-      return <Alert colorScheme="green">Nice! You earned {roundPoints} points!</Alert> 
-    else if ( roundOutcome === RoundOutcomeState.LOSS ) 
-      return <Alert colorScheme="red">Too bad!</Alert> 
-  }
+  // get new word upon new round
+  useEffect( () => {
+    if ( roundOutcomeState !== RoundOutcomeState.ONGOING ) return
+    if ( gameWords.length === 0 ) return
+
+    console.log( {roundNumber, gameWords} )
+
+    setCurrentWord( gameWords[ roundNumber ] )
+  }, [ roundOutcomeState, gameWords ] )
 
   return (
     <Center>
       <Stack gap={"15px"}>
         <SiteHeader />
         <GameHeader />
-        <GameFormInput></GameFormInput>
-        {
-          fetchRoundOutcomeAlert()
-        }
+        <GameBody />
+        <Alert colorScheme="orange">
+          Testing: word is "{currentWord?.word}"
+        </Alert>
       </Stack>
     </Center>
   )

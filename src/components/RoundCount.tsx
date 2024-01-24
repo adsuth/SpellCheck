@@ -1,22 +1,23 @@
 import React, { useEffect } from 'react'
 import { Text } from '@chakra-ui/react';
-import { TOTAL_ROUND_COUNT } from '../declarations';
 import { useAtom } from 'jotai';
-import { currentWordAtom, roundNumberAtom } from '../atoms';
+import { currentWordAtom, gameTotalRoundCountAtom, roundNumberAtom, roundOutcomeStateAtom } from '../atoms';
+import { RoundOutcomeState } from "../definitions";
 
 export default function RoundCount() {
   const [ roundNumber, setRoundNumber ] = useAtom( roundNumberAtom )
-  const [ currentWord, setCurrentWord ] = useAtom( currentWordAtom )
+  const [ totalRoundCount ]             = useAtom( gameTotalRoundCountAtom )
+  const [ roundOutcomeState ]           = useAtom( roundOutcomeStateAtom )
 
   /** Handle word changes */
   useEffect( () => {
-    if ( currentWord === null ) return
+    if ( roundOutcomeState === RoundOutcomeState.ONGOING ) return
     setRoundNumber( roundNumber + 1 )
-  }, [ currentWord ] )
+  }, [ roundOutcomeState ] )
 
   return (
     <Text>
-      {roundNumber} of {TOTAL_ROUND_COUNT}
+      {roundNumber} of {totalRoundCount}
     </Text>
   )
 }

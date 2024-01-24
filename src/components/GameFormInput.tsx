@@ -4,23 +4,26 @@ import { Button, FormLabel, Input, Flex, Divider } from "@chakra-ui/react";
 import { useEffect, useRef, useState } from "react";
 import CurrentWordAudioPlayer from "./CurrentWordAudioPlayer";
 import { useAtom } from "jotai";
-import { currentWordAtom, roundNumberAtom, roundOutcomeStateAtom as roundOutcomeStateAtom } from "../atoms";
-import { compareStrings, wasUserCorrect } from "../utils";
+import { allWordsAtom, currentWordAtom, hasAudioPlayedOnceAtom, roundNumberAtom, roundOutcomeStateAtom as roundOutcomeStateAtom } from "../atoms";
+import { compareStrings, randomSample, wasUserCorrect } from "../utils";
 import { RoundOutcomeState } from "../definitions";
 
 
 export default function GameFormInput() {
-  const [currentInput, setCurrentInput] = useState("");
-  const [currentWord, setCurrentWord]   = useAtom(currentWordAtom);
-  const [roundNumber, setRoundNumber]   = useAtom(roundNumberAtom);
-  const [roundOutcomeState, setRoundOutcomeState ]  = useAtom(roundOutcomeStateAtom);
+  const [ currentInput, setCurrentInput ] = useState("");
+  
+  const [ allWords ]   = useAtom(allWordsAtom);
+  const [ currentWord, setCurrentWord ]   = useAtom(currentWordAtom);
+  const [ roundOutcomeState, setRoundOutcomeState  ]  = useAtom(roundOutcomeStateAtom);
+  const [ hasAudioPlayedOnce ] = useAtom( hasAudioPlayedOnceAtom )
 
   const _inputRef = useRef( null )
 
-  
-  function fetchNewWord() {
-    setCurrentWord({ word: "among", context: "they were among us" });
-  }
+  // guarantees focus on the input when enabled
+  useEffect( () => {
+    if ( !hasAudioPlayedOnce ) return
+    _inputRef?.current.focus()
+  }, [ hasAudioPlayedOnce ] )
 
   function onAnswerSubmit() {
     if (currentWord === null) return;
@@ -35,7 +38,6 @@ export default function GameFormInput() {
       outcomeState = RoundOutcomeState.WIN
     
     setRoundOutcomeState( outcomeState )
-    fetchNewWord();
   }
 
   function onInputEnterKey(key: string) {
@@ -56,12 +58,12 @@ export default function GameFormInput() {
           </Center>
 
           <Center>
-            <CurrentWordAudioPlayer _inputRef={_inputRef} />
+            <CurrentWordAudioPlayer/>
           </Center>
         </Flex>
       </Center>
 
-      <Flex>
+      <HStack spacing={3}>
         <Input
           ref={_inputRef}
           type="text"
@@ -69,6 +71,7 @@ export default function GameFormInput() {
           value={currentInput}
           onChange={e => setCurrentInput(e.target.value)}
           onKeyDown={e => onInputEnterKey(e.key)}
+          isDisabled={!hasAudioPlayedOnce}
         />
 
         <Button
@@ -79,7 +82,7 @@ export default function GameFormInput() {
         >
           Submit
         </Button>
-      </Flex>
+      </HStack>
     </Stack>
   );
 }
