@@ -23,6 +23,7 @@ export enum RoundOutcomeState {
 }
 
 export enum GameState {
-  ONGOING = 0,
+  NEW = 0,
+  ONGOING,
   ENDED
 }

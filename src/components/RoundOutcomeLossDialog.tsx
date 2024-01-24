@@ -2,7 +2,7 @@ import { Alert, Box, Card, Center } from "@chakra-ui/react"
 import { useAtom } from "jotai"
 import React from 'react'
 import { currentWordAtom } from "../atoms"
-import RoundOutcomeContinueButton from "./RoundOutcomeContinueButton"
+import GameContinueButton from "./GameContinueButton"
 
 export default function RoundOutcomeLossDialog() {
   const [ currentWord ] = useAtom( currentWordAtom )
@@ -19,7 +19,7 @@ export default function RoundOutcomeLossDialog() {
         }
         
         <Center>
-          <RoundOutcomeContinueButton/>
+          <GameContinueButton/>
         </Center>
       </Box>
     </Alert>

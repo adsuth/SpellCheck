@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { gameStateAtom, gameTotalRoundCountAtom, roundNumberAtom, roundOutcomeStateAtom } from "../atoms"
 import { GameState, RoundOutcomeState } from "../definitions"
 
-export default function RoundOutcomeContinueButton() {
+export default function GameContinueButton() {
   const [ roundOutcomeState, setRoundOutcomeState ] = useAtom( roundOutcomeStateAtom )
 
   const [ gameState, setGameState ] = useAtom( gameStateAtom )
@@ -27,6 +27,15 @@ export default function RoundOutcomeContinueButton() {
 
   function nextAction() 
   {
+    // after end screen
+    if ( gameState === GameState.ENDED )
+    {
+      setGameState( GameState.NEW )
+      console.log( "Set state of Game to NEW" )
+      return
+    }
+
+    // final round
     if ( roundNumber === totalRoundCount ) setGameState( GameState.ENDED )
     else setRoundOutcomeState( RoundOutcomeState.ONGOING )
   }
