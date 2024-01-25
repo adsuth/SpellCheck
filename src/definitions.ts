@@ -27,3 +27,18 @@ export enum GameState {
   ONGOING,
   ENDED
 }
+
+export type KeybindsMap = {
+  [bind: string]: Keybind
+}
+
+export type Keybind = {
+  code: string,
+  mod?: string,
+}
+
+export enum ModifierKeyType {
+  SHIFT    = 0,
+  CONTROL,
+  ALT,
+}

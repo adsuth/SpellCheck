@@ -1,4 +1,4 @@
-import { Alert, Center, Stack } from "@chakra-ui/react"
+import { Alert, Center, Stack, VStack } from "@chakra-ui/react"
 import { useAtom } from "jotai"
 import { useEffect } from "react"
 import { allWordsAtom, currentWordAtom, gameStateAtom, gameTotalRoundCountAtom, gameWordsAtom, roundNumberAtom, roundOutcomeStateAtom, totalPointsAtom } from "./atoms"
@@ -67,14 +67,14 @@ function App()
 
   return (
     <Center>
-      <Stack gap={"15px"}>
+      <VStack spacing={1}>
         <SiteHeader />
         <GameHeader />
         <GameBody />
         <Alert colorScheme="orange">
           Testing: word is "{currentWord?.word}"
         </Alert>
-      </Stack>
+      </VStack>
     </Center>
   )
 }

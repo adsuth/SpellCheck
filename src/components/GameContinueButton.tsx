@@ -10,17 +10,25 @@ export default function GameContinueButton() {
   const [ gameState, setGameState ] = useAtom( gameStateAtom )
   const [ roundNumber, setRoundNumber ] = useAtom( roundNumberAtom )
   const [ totalRoundCount, setTotalRoundCount ] = useAtom( gameTotalRoundCountAtom )
+
+  const [ isActive, setIsActive ] = useState( false )
+  
+  useEffect( () => {
+    setTimeout( () => {
+      setIsActive( true )
+    }, 500 )
+  }, [] )
   
   useEffect( () => {
     window.addEventListener( "keydown", pressEnterToNextRound )
     return () => window.removeEventListener( "keydown", pressEnterToNextRound )
-  }, [] )
+  }, [ isActive ] )
 
   function pressEnterToNextRound( e: any )
   {
+    if ( !isActive ) return
     if ( e.code !== "Enter" ) return
     if ( roundOutcomeState === RoundOutcomeState.ONGOING ) return
-    return
     // todo: fix this 
     nextAction()
   }
@@ -40,9 +48,22 @@ export default function GameContinueButton() {
     else setRoundOutcomeState( RoundOutcomeState.ONGOING )
   }
 
+  function determineColorScheme()
+  {
+    let colorScheme = roundOutcomeState === RoundOutcomeState.WIN ? "green" : "red"
+    colorScheme     = gameState === GameState.ENDED ? "red" : colorScheme
+    return colorScheme
+  }
+
+  function determineButtonText()
+  {
+    return ( gameState === GameState.ENDED ) ? "New Game" : "Continue"
+  }
+
+
   return (
-    <Button onClick={ nextAction }>
-      Continue
+    <Button onClick={ nextAction } isLoading={!isActive} colorScheme={determineColorScheme()}>
+      {determineButtonText()}
     </Button>
   )
 }

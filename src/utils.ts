@@ -24,6 +24,11 @@ export function compareStrings( a: string, b: string )
 export function calculateRoundPoints( roundTime: number )
 {
   if ( isRoundTimeUp( roundTime ) ) return 0
+  return pointsFormula( roundTime )
+}
+
+export function pointsFormula( roundTime: number )
+{
   return BASE_POINTS + ( ROUND_TIME - roundTime ) * BASE_POINT_MODIFIER
 }
 

@@ -1,9 +1,10 @@
 import { useAtom } from 'jotai'
 import React, { useEffect } from 'react'
 import { roundOutcomeStateAtom, roundPointsAtom, roundTimeAtom, totalPointsAtom } from '../atoms'
-import { calculateRoundPoints } from '../utils'
+import { calculateRoundPoints, pointsFormula } from '../utils'
 import { Text } from '@chakra-ui/react'
 import { RoundOutcomeState } from '../definitions'
+import { ROUND_TIME } from "../declarations"
 
 export default function GamePoints() {
   const [ totalPoints, setTotalPoints ] = useAtom( totalPointsAtom )
@@ -16,7 +17,7 @@ export default function GamePoints() {
     if ( roundOutcomeState === RoundOutcomeState.LOSS ) return
 
     const newPoints = calculateRoundPoints( timeLeft )
-    setRoundPoints( newPoints ) 
+    setRoundPoints( newPoints )
     setTotalPoints( totalPoints + newPoints )
   }, [ roundOutcomeState ] )
   

@@ -6,6 +6,7 @@ import { formatWordContextForSpeech } from '../utils'
 import { KEYBINDS } from '../declarations'
 import { useTimerReset } from '../contexts/RoundTimerContext'
 import { RoundOutcomeState, TimerState } from '../definitions'
+import { IoMdVolumeHigh } from "react-icons/io";
 
 
 export default function CurrentWordAudioPlayer() {
@@ -29,7 +30,7 @@ export default function CurrentWordAudioPlayer() {
   /** Handle Keybinds */
   useEffect( () => {
     window.addEventListener( "keydown", e => {
-      if ( e.code === KEYBINDS.playAudio )
+      if ( e.code === KEYBINDS["playAudio"].code )
       {
         e.preventDefault()
         _playAudioButton?.current?.click()
@@ -60,7 +61,7 @@ export default function CurrentWordAudioPlayer() {
 
   return (
     <Button ref={_playAudioButton} onClick={handleButtonClick} isLoading={audioPlaying}>
-      🔊
+      <IoMdVolumeHigh/>
     </Button>
   )
 }
