@@ -2,7 +2,7 @@
 export type SpellCheckWord = {
   word: string,
   variations?: string[],
-  context: string
+  example: string
 } | null
 
 export interface RoundTime {

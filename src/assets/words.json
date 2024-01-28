@@ -1,0 +1,2182 @@
+[
+  {
+    "word": "word",
+    "example": "example"
+  },
+  {
+    "word": "able",
+    "example": "She is able to solve complex problems."
+  },
+  {
+    "word": "aboard",
+    "example": "They went aboard the ship to start their journey."
+  },
+  {
+    "word": "about",
+    "example": "Tell me something about yourself."
+  },
+  {
+    "word": "above",
+    "example": "The stars glittered above in the night sky."
+  },
+  {
+    "word": "absent",
+    "example": "He was absent from the meeting yesterday."
+  },
+  {
+    "word": "accept",
+    "example": "She will accept the job offer."
+  },
+  {
+    "word": "accident",
+    "example": "The car crash was a terrible accident."
+  },
+  {
+    "word": "account",
+    "example": "Make sure to keep a record in your account."
+  },
+  {
+    "word": "ache",
+    "example": "My head began to ache after a long day."
+  },
+  {
+    "word": "aching",
+    "example": "Her back has been aching for days."
+  },
+  {
+    "word": "acorn",
+    "example": "Squirrels gather acorns for winter."
+  },
+  {
+    "word": "acre",
+    "example": "The farm covers several acres of land."
+  },
+  {
+    "word": "across",
+    "example": "Let's walk across the bridge to the other side."
+  },
+  {
+    "word": "acts",
+    "example": "His kind acts earned him respect."
+  },
+  {
+    "word": "address",
+    "example": "Write your address on the envelope."
+  },
+  {
+    "word": "admire",
+    "example": "I admire her talent and creativity."
+  },
+  {
+    "word": "adventure",
+    "example": "Going on a jungle safari is an exciting adventure."
+  },
+  {
+    "word": "afar",
+    "example": "The mountains loomed afar in the distance."
+  },
+  {
+    "word": "afraid",
+    "example": "Don't be afraid; I am here to help."
+  },
+  {
+    "word": "after",
+    "example": "We can meet after the meeting."
+  },
+  {
+    "word": "afternoon",
+    "example": "Let's have lunch in the afternoon."
+  },
+  {
+    "word": "afterward",
+    "example": "I'll call you afterward to discuss the details."
+  },
+  {
+    "word": "afterwards",
+    "example": "They went shopping and afterwards had dinner."
+  },
+  {
+    "word": "again",
+    "example": "Please repeat that again; I didn't hear you."
+  },
+  {
+    "word": "against",
+    "example": "She stood against injustice."
+  },
+  {
+    "word": "aged",
+    "example": "The aged oak tree stood tall in the park."
+  },
+  {
+    "word": "agree",
+    "example": "Do you agree with the proposed plan?"
+  },
+  {
+    "word": "ahead",
+    "example": "Plan your steps ahead for a successful journey."
+  },
+  {
+    "word": "airfield",
+    "example": "The airplane landed at the airfield."
+  },
+  {
+    "word": "airplane",
+    "example": "The airplane soared through the sky."
+  },
+  {
+    "word": "airport",
+    "example": "They arrived at the airport for their flight."
+  },
+  {
+    "word": "airship",
+    "example": "The airship floated gracefully in the sky."
+  },
+  {
+    "word": "airy",
+    "example": "The room was spacious and airy."
+  },
+  {
+    "word": "alarm",
+    "example": "The fire alarm rang loudly in the building."
+  },
+  {
+    "word": "alike",
+    "example": "The twins look remarkably alike."
+  },
+  {
+    "word": "alive",
+    "example": "The injured bird is still alive."
+  },
+  {
+    "word": "alley",
+    "example": "They walked down the narrow alley."
+  },
+  {
+    "word": "alligator",
+    "example": "We spotted an alligator in the swamp."
+  },
+  {
+    "word": "allow",
+    "example": "Please allow me to explain."
+  },
+  {
+    "word": "almost",
+    "example": "We are almost at our destination."
+  },
+  {
+    "word": "alone",
+    "example": "I prefer to be alone sometimes."
+  },
+  {
+    "word": "along",
+    "example": "Take a stroll along the beach."
+  },
+  {
+    "word": "aloud",
+    "example": "Read the passage aloud for everyone."
+  },
+  {
+    "word": "already",
+    "example": "Have you already finished your homework?"
+  },
+  {
+    "word": "also",
+    "example": "I like pizza"
+  },
+  {
+    "word": "always",
+    "example": "She always arrives on time."
+  },
+  {
+    "word": "America",
+    "example": "America is a diverse and vast country."
+  },
+  {
+    "word": "American",
+    "example": "He is an American citizen."
+  },
+  {
+    "word": "among",
+    "example": "Find the hidden treasure among the rocks."
+  },
+  {
+    "word": "amount",
+    "example": "The total amount was more than expected."
+  },
+  {
+    "word": "angel",
+    "example": "She dressed up as an angel for Halloween."
+  },
+  {
+    "word": "anger",
+    "example": "His face turned red with anger."
+  },
+  {
+    "word": "angry",
+    "example": "She was angry at the unfair treatment."
+  },
+  {
+    "word": "animal",
+    "example": "The zoo is home to various animal species."
+  },
+  {
+    "word": "another",
+    "example": "Can I have another piece of cake?"
+  },
+  {
+    "word": "answer",
+    "example": "Please provide an answer to the question."
+  },
+  {
+    "word": "anybody",
+    "example": "Anybody can learn to play the guitar."
+  },
+  {
+    "word": "anyhow",
+    "example": "We'll find a solution anyhow."
+  },
+  {
+    "word": "anyone",
+    "example": "Anyone can join the club."
+  },
+  {
+    "word": "anything",
+    "example": "You can ask me anything."
+  },
+  {
+    "word": "anyway",
+    "example": "I'll do it anyway"
+  },
+  {
+    "word": "anywhere",
+    "example": "We can go anywhere you'd like."
+  },
+  {
+    "word": "apart",
+    "example": "The old friends grew apart over the years."
+  },
+  {
+    "word": "apartment",
+    "example": "They live in a cozy apartment."
+  },
+  {
+    "word": "apiece",
+    "example": "The apples cost 50 cents apiece."
+  },
+  {
+    "word": "appear",
+    "example": "The magician made a rabbit appear."
+  },
+  {
+    "word": "apple",
+    "example": "She took a crisp bite of the apple."
+  },
+  {
+    "word": "April",
+    "example": "The flowers bloom beautifully in April."
+  },
+  {
+    "word": "apron",
+    "example": "She wore a floral apron while baking."
+  },
+  {
+    "word": "arise",
+    "example": "Difficulties may arise"
+  },
+  {
+    "word": "arithmetic",
+    "example": "He excels in mathematics and arithmetic."
+  },
+  {
+    "word": "armful",
+    "example": "She carried an armful of flowers."
+  },
+  {
+    "word": "army",
+    "example": "The army marched in perfect formation."
+  },
+  {
+    "word": "arose",
+    "example": "The issue arose unexpectedly."
+  },
+  {
+    "word": "around",
+    "example": "Let's sit around the campfire."
+  },
+  {
+    "word": "arrange",
+    "example": "Please arrange the books on the shelf."
+  },
+  {
+    "word": "arrive",
+    "example": "We will arrive at the airport early."
+  },
+  {
+    "word": "arrived",
+    "example": "The guests arrived for the party."
+  },
+  {
+    "word": "arrow",
+    "example": "The archer aimed the arrow at the target."
+  },
+  {
+    "word": "artist",
+    "example": "She is a talented artist."
+  },
+  {
+    "word": "ashes",
+    "example": "The fire reduced the logs to ashes."
+  },
+  {
+    "word": "aside",
+    "example": "Put the toys aside and focus on homework."
+  },
+  {
+    "word": "asleep",
+    "example": "The baby is finally asleep."
+  },
+  {
+    "word": "attack",
+    "example": "The army prepared to attack the fortress."
+  },
+  {
+    "word": "attend",
+    "example": "I will attend the meeting tomorrow."
+  },
+  {
+    "word": "attention",
+    "example": "Pay attention to the details."
+  },
+  {
+    "word": "August",
+    "example": "August is the hottest month of summer."
+  },
+  {
+    "word": "aunt",
+    "example": "My aunt baked a delicious cake."
+  },
+  {
+    "word": "author",
+    "example": "The author wrote a captivating novel."
+  },
+  {
+    "word": "auto",
+    "example": "He owns an auto repair shop."
+  },
+  {
+    "word": "automobile",
+    "example": "The automobile industry is evolving."
+  },
+  {
+    "word": "autumn",
+    "example": "The leaves change color in autumn."
+  },
+  {
+    "word": "avenue",
+    "example": "They walked down the tree-lined avenue."
+  },
+  {
+    "word": "awake",
+    "example": "I am wide awake and ready to start."
+  },
+  {
+    "word": "awaken",
+    "example": "The loud noise will awaken everyone."
+  },
+  {
+    "word": "away",
+    "example": "The bird flew away from its nest."
+  },
+  {
+    "word": "awful",
+    "example": "The storm caused awful destruction."
+  },
+  {
+    "word": "awfully",
+    "example": "I felt awfully tired after the long day."
+  },
+  {
+    "word": "awhile",
+    "example": "Stay with us for awhile longer."
+  },
+  {
+    "word": "axebaa",
+    "example": "He swung the axebaa to chop the wood."
+  },
+  {
+    "word": "babe",
+    "example": "The sweet lullaby put the babe to sleep."
+  },
+  {
+    "word": "babies",
+    "example": "Babies giggle and bring joy to everyone."
+  },
+  {
+    "word": "back",
+    "example": "Please bring back my book."
+  },
+  {
+    "word": "background",
+    "example": "The mountain served as a beautiful background."
+  },
+  {
+    "word": "backward",
+    "example": "Don't step backward; it's dangerous."
+  },
+  {
+    "word": "backwards",
+    "example": "He walked backwards to retrace his steps."
+  },
+  {
+    "word": "bacon",
+    "example": "The aroma of bacon filled the kitchen."
+  },
+  {
+    "word": "badge",
+    "example": "He proudly wore his merit badge."
+  },
+  {
+    "word": "badly",
+    "example": "He was badly injured in the accident."
+  },
+  {
+    "word": "bake",
+    "example": "Let's bake cookies for the party."
+  },
+  {
+    "word": "baker",
+    "example": "The baker kneaded the dough skillfully."
+  },
+  {
+    "word": "bakery",
+    "example": "The bakery sells delicious pastries."
+  },
+  {
+    "word": "baking",
+    "example": "The scent of baking bread filled the air."
+  },
+  {
+    "word": "ball",
+    "example": "The children played with a colorful ball."
+  },
+  {
+    "word": "balloon",
+    "example": "She held onto her balloon tightly."
+  },
+  {
+    "word": "banana",
+    "example": "He peeled the banana for a quick snack."
+  },
+  {
+    "word": "band",
+    "example": "The marching band played upbeat tunes."
+  },
+  {
+    "word": "bandage",
+    "example": "Apply a bandage to the wound."
+  },
+  {
+    "word": "bang",
+    "example": "The loud bang startled everyone."
+  },
+  {
+    "word": "banjo",
+    "example": "He strummed the banjo at the folk concert."
+  },
+  {
+    "word": "bank",
+    "example": "They deposited money in the bank."
+  },
+  {
+    "word": "banker",
+    "example": "The banker manages financial transactions."
+  },
+  {
+    "word": "barber",
+    "example": "The barber gave him a neat haircut."
+  },
+  {
+    "word": "bare",
+    "example": "The tree stood bare in the winter."
+  },
+  {
+    "word": "barefoot",
+    "example": "She enjoyed walking barefoot on the sand."
+  },
+  {
+    "word": "barely",
+    "example": "He barely managed to finish on time."
+  },
+  {
+    "word": "bark",
+    "example": "The dog's bark echoed through the night."
+  },
+  {
+    "word": "barn",
+    "example": "The farmer stored hay in the barn."
+  },
+  {
+    "word": "barrel",
+    "example": "The barrel was filled with rainwater."
+  },
+  {
+    "word": "base",
+    "example": "The team built a strong base."
+  },
+  {
+    "word": "baseball",
+    "example": "Baseball is a popular sport in the US."
+  },
+  {
+    "word": "basement",
+    "example": "They stored old items in the basement."
+  },
+  {
+    "word": "basket",
+    "example": "She carried a basket full of fruits."
+  },
+  {
+    "word": "bat",
+    "example": "The bat flew silently in the night."
+  },
+  {
+    "word": "bath",
+    "example": "Take a warm bath to relax."
+  },
+  {
+    "word": "bathe",
+    "example": "The puppy didn't want to bathe."
+  },
+  {
+    "word": "bathing",
+    "example": "She enjoyed bathing in the sun."
+  },
+  {
+    "word": "bathroom",
+    "example": "The bathroom is down the hall."
+  },
+  {
+    "word": "battle",
+    "example": "The soldiers prepared for battle."
+  },
+  {
+    "word": "battleship",
+    "example": "The battleship sailed across the ocean."
+  },
+  {
+    "word": "bay",
+    "example": "The boat sailed into the calm bay."
+  },
+  {
+    "word": "beak",
+    "example": "The bird used its beak to build a nest."
+  },
+  {
+    "word": "beam",
+    "example": "Sunlight filtered through the wooden beam."
+  },
+  {
+    "word": "bean",
+    "example": "She planted beans in her garden."
+  },
+  {
+    "word": "bear",
+    "example": "The teddy bear was a gift."
+  },
+  {
+    "word": "beard",
+    "example": "He grew a beard during the winter."
+  },
+  {
+    "word": "beast",
+    "example": "The mythical beast guarded the treasure."
+  },
+  {
+    "word": "beat",
+    "example": "The rhythmic beat echoed in the room."
+  },
+  {
+    "word": "beautiful",
+    "example": "The sunset was a beautiful sight."
+  },
+  {
+    "word": "beauty",
+    "example": "Nature's beauty is truly captivating."
+  },
+  {
+    "word": "because",
+    "example": "I stayed inside because of the rain."
+  },
+  {
+    "word": "become",
+    "example": "She aspired to become a doctor."
+  },
+  {
+    "word": "becoming",
+    "example": "He is becoming a skilled musician."
+  },
+  {
+    "word": "bed",
+    "example": "The cozy bed invited a good night's sleep."
+  },
+  {
+    "word": "bedroom",
+    "example": "The bedroom is painted in soothing colors."
+  },
+  {
+    "word": "bee",
+    "example": "The bee buzzed around the flowers."
+  },
+  {
+    "word": "beech",
+    "example": "The beech tree provided ample shade."
+  },
+  {
+    "word": "beef",
+    "example": "They grilled burgers made of beef."
+  },
+  {
+    "word": "beehive",
+    "example": "The bees buzzed around the beehive."
+  },
+  {
+    "word": "been",
+    "example": "I have been to that city before."
+  },
+  {
+    "word": "beer",
+    "example": "He ordered a cold beer at the bar."
+  },
+  {
+    "word": "before",
+    "example": "Finish your homework before bedtime."
+  },
+  {
+    "word": "beg",
+    "example": "The stray dog would beg for food."
+  },
+  {
+    "word": "began",
+    "example": "The concert began with an overture."
+  },
+  {
+    "word": "beggar",
+    "example": "The beggar asked for spare change."
+  },
+  {
+    "word": "begged",
+    "example": "She begged for forgiveness."
+  },
+  {
+    "word": "begin",
+    "example": "Let's begin the project tomorrow."
+  },
+  {
+    "word": "beginning",
+    "example": "The beginning of the story was captivating."
+  },
+  {
+    "word": "behave",
+    "example": "Children should learn to behave well."
+  },
+  {
+    "word": "behind",
+    "example": "The cat is hiding behind the couch."
+  },
+  {
+    "word": "being",
+    "example": "Being kind is a virtue."
+  },
+  {
+    "word": "believe",
+    "example": "I believe in your abilities."
+  },
+  {
+    "word": "bell",
+    "example": "The bell rang to signal the end of class."
+  },
+  {
+    "word": "belong",
+    "example": "The lost key must belong to someone."
+  },
+  {
+    "word": "below",
+    "example": "The temperature dropped below freezing."
+  },
+  {
+    "word": "belt",
+    "example": "He tightened his belt before the race."
+  },
+  {
+    "word": "bench",
+    "example": "They sat together on the park bench."
+  },
+  {
+    "word": "bend",
+    "example": "The road began to bend sharply."
+  },
+  {
+    "word": "beneath",
+    "example": "A treasure is buried beneath the sand."
+  },
+  {
+    "word": "berries",
+    "example": "The forest was rich in berries."
+  },
+  {
+    "word": "beside",
+    "example": "Stand beside me for the photograph."
+  },
+  {
+    "word": "besides",
+    "example": "There is food"
+  },
+  {
+    "word": "between",
+    "example": "The river flows between two mountains."
+  },
+  {
+    "word": "beyond",
+    "example": "Explore beyond the familiar path."
+  },
+  {
+    "word": "bicycle",
+    "example": "He rode his bicycle to the park."
+  },
+  {
+    "word": "big",
+    "example": "The elephant is big and strong."
+  },
+  {
+    "word": "bigger",
+    "example": "A larger car is often more comfortable."
+  },
+  {
+    "word": "bill",
+    "example": "He received a large bill for the repairs."
+  },
+  {
+    "word": "birds",
+    "example": "Birds chirped in the early morning."
+  },
+  {
+    "word": "birth",
+    "example": "The birth of a baby is a joyous occasion."
+  },
+  {
+    "word": "birthday",
+    "example": "They celebrated her birthday with a cake."
+  },
+  {
+    "word": "biscuit",
+    "example": "She baked a batch of delicious biscuits."
+  },
+  {
+    "word": "bit",
+    "example": "Take a small bit to taste the dish."
+  },
+  {
+    "word": "bite",
+    "example": "The mosquito gave an annoying bite."
+  },
+  {
+    "word": "bitter",
+    "example": "The bitter cold made them shiver."
+  },
+  {
+    "word": "black",
+    "example": "The cat has sleek"
+  },
+  {
+    "word": "blackberry",
+    "example": "The blackberry bushes were full of fruit."
+  },
+  {
+    "word": "blame",
+    "example": "Don't blame others for your mistakes."
+  },
+  {
+    "word": "blank",
+    "example": "She stared at the blank canvas."
+  },
+  {
+    "word": "blanket",
+    "example": "Wrap yourself in a warm blanket."
+  },
+  {
+    "word": "blast",
+    "example": "The wind carried the blast of the horn."
+  },
+  {
+    "word": "blaze",
+    "example": "The fire began to blaze fiercely."
+  },
+  {
+    "word": "bleed",
+    "example": "Apply pressure to stop the wound from bleeding."
+  },
+  {
+    "word": "bless",
+    "example": "May you be blessed with happiness."
+  },
+  {
+    "word": "blessing",
+    "example": "His presence is a true blessing."
+  },
+  {
+    "word": "blind",
+    "example": "The blind man navigated with a cane."
+  },
+  {
+    "word": "blink",
+    "example": "She didn't blink at the surprising news."
+  },
+  {
+    "word": "bliss",
+    "example": "The vacation brought pure bliss."
+  },
+  {
+    "word": "blizzard",
+    "example": "The blizzard covered the town in snow."
+  },
+  {
+    "word": "block",
+    "example": "The toy blocks formed a tall tower."
+  },
+  {
+    "word": "blood",
+    "example": "The nurse drew blood for the test."
+  },
+  {
+    "word": "bloom",
+    "example": "The flowers will bloom in the spring."
+  },
+  {
+    "word": "blossom",
+    "example": "Cherry trees blossom in the spring."
+  },
+  {
+    "word": "blow",
+    "example": "The wind will blow away the leaves."
+  },
+  {
+    "word": "blue",
+    "example": "The sky was painted in shades of blue."
+  },
+  {
+    "word": "blueberry",
+    "example": "She made a delicious blueberry pie."
+  },
+  {
+    "word": "blush",
+    "example": "Her cheeks began to blush."
+  },
+  {
+    "word": "board",
+    "example": "They will board the train shortly."
+  },
+  {
+    "word": "boast",
+    "example": "She doesn't like to boast about her success."
+  },
+  {
+    "word": "boat",
+    "example": "They sailed the boat on the calm lake."
+  },
+  {
+    "word": "body",
+    "example": "Exercise is good for the body."
+  },
+  {
+    "word": "boil",
+    "example": "Boil the water before adding the pasta."
+  },
+  {
+    "word": "boiling",
+    "example": "The soup is boiling on the stove."
+  },
+  {
+    "word": "bold",
+    "example": "He made a bold decision to start his own business."
+  },
+  {
+    "word": "bolt",
+    "example": "Secure the door with a heavy bolt."
+  },
+  {
+    "word": "bone",
+    "example": "The dog buried the bone in the garden."
+  },
+  {
+    "word": "bonnet",
+    "example": "She wore a bonnet to protect from the sun."
+  },
+  {
+    "word": "booby",
+    "example": "The booby trap caught them by surprise."
+  },
+  {
+    "word": "book",
+    "example": "She read a fascinating book last night."
+  },
+  {
+    "word": "books",
+    "example": "His shelves were filled with books."
+  },
+  {
+    "word": "bookstore",
+    "example": "They visited the local bookstore."
+  },
+  {
+    "word": "bookworm",
+    "example": "She's a dedicated bookworm."
+  },
+  {
+    "word": "boot",
+    "example": "He wore sturdy boots for the hike."
+  },
+  {
+    "word": "border",
+    "example": "The river forms a natural border."
+  },
+  {
+    "word": "bore",
+    "example": "The lecture was starting to bore me."
+  },
+  {
+    "word": "bored",
+    "example": "He looked bored during the long meeting."
+  },
+  {
+    "word": "boring",
+    "example": "The documentary turned out to be boring."
+  },
+  {
+    "word": "born",
+    "example": "He was born in the city."
+  },
+  {
+    "word": "borrow",
+    "example": "Can I borrow your pen for a moment?"
+  },
+  {
+    "word": "boss",
+    "example": "The boss congratulated the team."
+  },
+  {
+    "word": "both",
+    "example": "They both enjoyed the movie."
+  },
+  {
+    "word": "bother",
+    "example": "Don't bother him while he's working."
+  },
+  {
+    "word": "bottle",
+    "example": "He filled the bottle with fresh water."
+  },
+  {
+    "word": "bottom",
+    "example": "Look for your keys at the bottom of the bag."
+  },
+  {
+    "word": "bought",
+    "example": "She bought a new dress for the occasion."
+  },
+  {
+    "word": "bounce",
+    "example": "The ball will bounce on the floor."
+  },
+  {
+    "word": "bow",
+    "example": "The violinist took a bow after the performance."
+  },
+  {
+    "word": "bowl",
+    "example": "She served soup in a large bowl."
+  },
+  {
+    "word": "box",
+    "example": "What's inside the mysterious box?"
+  },
+  {
+    "word": "boy",
+    "example": "The boy played in the park."
+  },
+  {
+    "word": "brain",
+    "example": "The brain is the body's control center."
+  },
+  {
+    "word": "brake",
+    "example": "Apply the brake to stop the car."
+  },
+  {
+    "word": "branch",
+    "example": "The bird perched on a tree branch."
+  },
+  {
+    "word": "brave",
+    "example": "The soldier showed bravery in battle."
+  },
+  {
+    "word": "bread",
+    "example": "The bakery sells a variety of bread."
+  },
+  {
+    "word": "break",
+    "example": "Take a break to refresh your mind."
+  },
+  {
+    "word": "breakfast",
+    "example": "They enjoyed a hearty breakfast."
+  },
+  {
+    "word": "breath",
+    "example": "Take a deep breath and relax."
+  },
+  {
+    "word": "breathe",
+    "example": "Breathe in the fresh air."
+  },
+  {
+    "word": "breeze",
+    "example": "A gentle breeze rustled the leaves."
+  },
+  {
+    "word": "brick",
+    "example": "The house was built with red bricks."
+  },
+  {
+    "word": "bride",
+    "example": "The bride looked stunning in her gown."
+  },
+  {
+    "word": "bridge",
+    "example": "The bridge connected the two islands."
+  },
+  {
+    "word": "bright",
+    "example": "The sun cast a bright light."
+  },
+  {
+    "word": "brilliant",
+    "example": "Her idea was brilliant and innovative."
+  },
+  {
+    "word": "bring",
+    "example": "Can you bring the documents to the meeting?"
+  },
+  {
+    "word": "broad",
+    "example": "The road became broad as they drove."
+  },
+  {
+    "word": "broadcast",
+    "example": "The radio station will broadcast the news."
+  },
+  {
+    "word": "broccoli",
+    "example": "She steamed fresh broccoli for dinner."
+  },
+  {
+    "word": "brochure",
+    "example": "The travel agency provided a colorful brochure."
+  },
+  {
+    "word": "broken",
+    "example": "The vase lay in pieces"
+  },
+  {
+    "word": "brother",
+    "example": "Her younger brother is playful."
+  },
+  {
+    "word": "brought",
+    "example": "She brought snacks for the party."
+  },
+  {
+    "word": "word",
+    "example": "example"
+  },
+  {
+    "word": "brought",
+    "example": "She brought a gift to the party."
+  },
+  {
+    "word": "brown",
+    "example": "The dog has a beautiful brown coat."
+  },
+  {
+    "word": "brush",
+    "example": "I use a brush to comb my hair."
+  },
+  {
+    "word": "bubble",
+    "example": "The kids love blowing bubbles in the park."
+  },
+  {
+    "word": "bucket",
+    "example": "She carried a bucket of water from the well."
+  },
+  {
+    "word": "buckle",
+    "example": "His belt buckle was shiny and ornate."
+  },
+  {
+    "word": "buffalo",
+    "example": "The buffalo grazed in the open field."
+  },
+  {
+    "word": "buggy",
+    "example": "They took a ride in a horse-drawn buggy."
+  },
+  {
+    "word": "build",
+    "example": "The construction workers build a new skyscraper."
+  },
+  {
+    "word": "building",
+    "example": "The tall building dominated the skyline."
+  },
+  {
+    "word": "built",
+    "example": "The house was built in the 19th century."
+  },
+  {
+    "word": "bulb",
+    "example": "He planted flower bulbs in the garden."
+  },
+  {
+    "word": "bull",
+    "example": "The rancher raised a strong and healthy bull."
+  },
+  {
+    "word": "bullet",
+    "example": "The detective found a bullet at the crime scene."
+  },
+  {
+    "word": "bumblebee",
+    "example": "A bumblebee buzzed around the blooming flowers."
+  },
+  {
+    "word": "bump",
+    "example": "I accidentally bumped into the door."
+  },
+  {
+    "word": "bunch",
+    "example": "She bought a bunch of bananas at the market."
+  },
+  {
+    "word": "bundle",
+    "example": "He carried a bundle of firewood on his back."
+  },
+  {
+    "word": "bunny",
+    "example": "The children found a cute bunny in the garden."
+  },
+  {
+    "word": "burn",
+    "example": "The fire began to burn brightly."
+  },
+  {
+    "word": "burst",
+    "example": "The balloon burst with a loud pop."
+  },
+  {
+    "word": "bury",
+    "example": "They decided to bury the time capsule in the backyard."
+  },
+  {
+    "word": "bush",
+    "example": "The bird built its nest in the bush."
+  },
+  {
+    "word": "bushel",
+    "example": "The farmer harvested a bushel of apples."
+  },
+  {
+    "word": "business",
+    "example": "She runs her own successful business."
+  },
+  {
+    "word": "busy",
+    "example": "The city streets were busy with people and cars."
+  },
+  {
+    "word": "butcher",
+    "example": "The butcher prepared fresh cuts of meat."
+  },
+  {
+    "word": "butt",
+    "example": "He tossed the cigarette butt into the trash."
+  },
+  {
+    "word": "butter",
+    "example": "Spread butter on the warm toast."
+  },
+  {
+    "word": "buttercup",
+    "example": "The meadow was full of colorful buttercups."
+  },
+  {
+    "word": "butterfly",
+    "example": "A graceful butterfly fluttered in the garden."
+  },
+  {
+    "word": "buttermilk",
+    "example": "She used buttermilk in her pancake recipe."
+  },
+  {
+    "word": "butterscotch",
+    "example": "The candy shop sold delicious butterscotch candies."
+  },
+  {
+    "word": "button",
+    "example": "She sewed a button onto her shirt."
+  },
+  {
+    "word": "buttonhole",
+    "example": "Make sure the button fits through the buttonhole."
+  },
+  {
+    "word": "buzz",
+    "example": "The bees buzzed around the hive."
+  },
+  {
+    "word": "bye",
+    "example": "Saying goodbye"
+  },
+  {
+    "word": "cab",
+    "example": "They hailed a cab to get to the destination."
+  },
+  {
+    "word": "cabbage",
+    "example": "The farmer harvested a head of cabbage."
+  },
+  {
+    "word": "cabin",
+    "example": "The cozy cabin was nestled in the woods."
+  },
+  {
+    "word": "cabinet",
+    "example": "She stored her dishes in the kitchen cabinet."
+  },
+  {
+    "word": "cackle",
+    "example": "The old witch let out a cackling laugh."
+  },
+  {
+    "word": "cage",
+    "example": "The zookeeper fed the animals in their cages."
+  },
+  {
+    "word": "cake",
+    "example": "They celebrated with a delicious birthday cake."
+  },
+  {
+    "word": "calendar",
+    "example": "She marked the date on the calendar."
+  },
+  {
+    "word": "calf",
+    "example": "The newborn calf stood up and wobbled."
+  },
+  {
+    "word": "call",
+    "example": "She received a call on her mobile phone."
+  },
+  {
+    "word": "caller",
+    "example": "The caller identified himself on the phone."
+  },
+  {
+    "word": "calling",
+    "example": "He heard a mysterious calling in the distance."
+  },
+  {
+    "word": "came",
+    "example": "She came running when she heard the news."
+  },
+  {
+    "word": "camel",
+    "example": "The caravan crossed the desert with camels."
+  },
+  {
+    "word": "camp",
+    "example": "They set up a camp in the mountains."
+  },
+  {
+    "word": "campfire",
+    "example": "They gathered around the campfire and told stories."
+  },
+  {
+    "word": "canal",
+    "example": "The boat sailed through the narrow canal."
+  },
+  {
+    "word": "canary",
+    "example": "The canary sang a beautiful melody."
+  },
+  {
+    "word": "candle",
+    "example": "They lit a candle for the romantic dinner."
+  },
+  {
+    "word": "candlestick",
+    "example": "The antique candlestick adorned the mantelpiece."
+  },
+  {
+    "word": "candy",
+    "example": "The children enjoyed a bag of colorful candy."
+  },
+  {
+    "word": "cane",
+    "example": "He walked with a sturdy cane."
+  },
+  {
+    "word": "cannon",
+    "example": "The cannon boomed during the celebration."
+  },
+  {
+    "word": "cannot",
+    "example": "She cannot attend the meeting tomorrow."
+  },
+  {
+    "word": "canoe",
+    "example": "They paddled the canoe down the river."
+  },
+  {
+    "word": "canyon",
+    "example": "The canyon was breathtakingly beautiful."
+  },
+  {
+    "word": "cape",
+    "example": "She wore a stylish cape to stay warm."
+  },
+  {
+    "word": "capital",
+    "example": "The capital city is the political center."
+  },
+  {
+    "word": "captain",
+    "example": "The captain navigated the ship through the storm."
+  },
+  {
+    "word": "card",
+    "example": "She received a birthday card in the mail."
+  },
+  {
+    "word": "cardboard",
+    "example": "They recycled the cardboard boxes."
+  },
+  {
+    "word": "care",
+    "example": "Parents always care for their children."
+  },
+  {
+    "word": "careful",
+    "example": "Be careful not to spill the hot soup."
+  },
+  {
+    "word": "careless",
+    "example": "His careless actions led to a mess."
+  },
+  {
+    "word": "carelessness",
+    "example": "The accident was a result of carelessness."
+  },
+  {
+    "word": "carload",
+    "example": "They transported a carload of goods."
+  },
+  {
+    "word": "carpenter",
+    "example": "The carpenter crafted a beautiful wooden table."
+  },
+  {
+    "word": "carpet",
+    "example": "The soft carpet covered the living room floor."
+  },
+  {
+    "word": "carriage",
+    "example": "The elegant carriage was pulled by white horses."
+  },
+  {
+    "word": "carrot",
+    "example": "She chopped carrots for the salad."
+  },
+  {
+    "word": "carry",
+    "example": "He helped carry the heavy boxes."
+  },
+  {
+    "word": "cart",
+    "example": "The farmer loaded vegetables onto the cart."
+  },
+  {
+    "word": "carve",
+    "example": "The artist used a knife to carve the sculpture."
+  },
+  {
+    "word": "case",
+    "example": "He presented his case to the jury."
+  },
+  {
+    "word": "cash",
+    "example": "She paid for the groceries with cash."
+  },
+  {
+    "word": "cashier",
+    "example": "The cashier rang up the items at the checkout."
+  },
+  {
+    "word": "castle",
+    "example": "The medieval castle stood on the hill."
+  },
+  {
+    "word": "catbird",
+    "example": "The catbird mimicked various bird calls."
+  },
+  {
+    "word": "catch",
+    "example": "He tried to catch the ball."
+  },
+  {
+    "word": "catcher",
+    "example": "The baseball catcher wore a mitt."
+  },
+  {
+    "word": "caterpillar",
+    "example": "The caterpillar transformed into a butterfly."
+  },
+  {
+    "word": "catfish",
+    "example": "The catfish swam in the pond."
+  },
+  {
+    "word": "catsup",
+    "example": "He added catsup to his hamburger."
+  },
+  {
+    "word": "cattle",
+    "example": "The rancher grazed cattle on the pasture."
+  },
+  {
+    "word": "caught",
+    "example": "She caught a glimpse of the sunset."
+  },
+  {
+    "word": "cause",
+    "example": "The stormy weather may cause delays."
+  },
+  {
+    "word": "cave",
+    "example": "The explorers entered a dark cave."
+  },
+  {
+    "word": "ceiling",
+    "example": "The spider crawled along the ceiling."
+  },
+  {
+    "word": "cell",
+    "example": "The prisoner was confined in a cell."
+  },
+  {
+    "word": "cellar",
+    "example": "They stored canned goods in the cellar."
+  },
+  {
+    "word": "cent",
+    "example": "She found a shiny penny worth one cent."
+  },
+  {
+    "word": "center",
+    "example": "The city center is bustling with activity."
+  },
+  {
+    "word": "cereal",
+    "example": "He poured milk into a bowl of cereal."
+  },
+  {
+    "word": "certain",
+    "example": "She felt a certain unease in the dark."
+  },
+  {
+    "word": "certainly",
+    "example": "He will certainly attend the event."
+  },
+  {
+    "word": "chain",
+    "example": "The bicycle was secured with a chain."
+  },
+  {
+    "word": "chair",
+    "example": "She sat on the comfortable chair."
+  },
+  {
+    "word": "chalk",
+    "example": "The teacher wrote on the blackboard with chalk."
+  },
+  {
+    "word": "champion",
+    "example": "He was declared the champion of the tournament."
+  },
+  {
+    "word": "chance",
+    "example": "Take a chance and try something new."
+  },
+  {
+    "word": "change",
+    "example": "They decided to change the color of the walls."
+  },
+  {
+    "word": "chap",
+    "example": "His lips became chapped in the cold wind."
+  },
+  {
+    "word": "charge",
+    "example": "The officer prepared to charge into battle."
+  },
+  {
+    "word": "charm",
+    "example": "The bracelet had a special charm."
+  },
+  {
+    "word": "chart",
+    "example": "The graph on the chart showed a decline."
+  },
+  {
+    "word": "chase",
+    "example": "The dog tried to chase the speeding car."
+  },
+  {
+    "word": "chatter",
+    "example": "The children's chatter filled the room."
+  },
+  {
+    "word": "cheap",
+    "example": "The store offered cheap prices on clothing."
+  },
+  {
+    "word": "cheat",
+    "example": "He decided not to cheat on the exam."
+  },
+  {
+    "word": "check",
+    "example": "Please write a check for the payment."
+  },
+  {
+    "word": "checkers",
+    "example": "They played a game of checkers."
+  },
+  {
+    "word": "cheek",
+    "example": "She planted a gentle kiss on his cheek."
+  },
+  {
+    "word": "cheer",
+    "example": "The crowd erupted in cheer after the victory."
+  },
+  {
+    "word": "cheese",
+    "example": "The mouse nibbled on a piece of cheese."
+  },
+  {
+    "word": "cherry",
+    "example": "The tree was full of ripe cherries."
+  },
+  {
+    "word": "chest",
+    "example": "He stored his clothes in the wooden chest."
+  },
+  {
+    "word": "chew",
+    "example": "Be sure to chew your food properly."
+  },
+  {
+    "word": "chick",
+    "example": "The baby bird is called a chick."
+  },
+  {
+    "word": "chicken",
+    "example": "She roasted a whole chicken for dinner."
+  },
+  {
+    "word": "chief",
+    "example": "The tribal chief made important decisions."
+  },
+  {
+    "word": "child",
+    "example": "Every child deserves love and care."
+  },
+  {
+    "word": "childhood",
+    "example": "She reminisced about her happy childhood."
+  },
+  {
+    "word": "children",
+    "example": "The playground echoed with the laughter of children."
+  },
+  {
+    "word": "chill",
+    "example": "The breeze brought a chill to the air."
+  },
+  {
+    "word": "chilly",
+    "example": "They bundled up to stay warm in the chilly weather."
+  },
+  {
+    "word": "chimney",
+    "example": "Smoke billowed from the chimney."
+  },
+  {
+    "word": "chin",
+    "example": "She rested her chin on her hands."
+  },
+  {
+    "word": "china",
+    "example": "The delicate china dishes were used for special occasions."
+  },
+  {
+    "word": "chip",
+    "example": "He bit into a crunchy potato chip."
+  },
+  {
+    "word": "chipmunk",
+    "example": "The chipmunk darted across the path."
+  },
+  {
+    "word": "chocolate",
+    "example": "She indulged in a piece of rich chocolate."
+  },
+  {
+    "word": "choice",
+    "example": "You have the freedom to make your own choice."
+  },
+  {
+    "word": "choose",
+    "example": "Take your time to choose the right option."
+  },
+  {
+    "word": "chop",
+    "example": "He used a knife to chop vegetables."
+  },
+  {
+    "word": "chorus",
+    "example": "The choir sang a beautiful chorus."
+  },
+  {
+    "word": "chose",
+    "example": "She chose the red dress for the party."
+  },
+  {
+    "word": "chosen",
+    "example": "The team had chosen a strong leader."
+  },
+  {
+    "word": "church",
+    "example": "The church bells rang on Sunday morning."
+  },
+  {
+    "word": "cider",
+    "example": "They enjoyed a glass of apple cider."
+  },
+  {
+    "word": "cigar",
+    "example": "He smoked a fine Cuban cigar."
+  },
+  {
+    "word": "cigarette",
+    "example": "Smoking a cigarette is harmful to health."
+  },
+  {
+    "word": "circle",
+    "example": "Draw a circle on the piece of paper."
+  },
+  {
+    "word": "circus",
+    "example": "The circus performers amazed the audience."
+  },
+  {
+    "word": "citizen",
+    "example": "As a citizen"
+  },
+  {
+    "word": "city",
+    "example": "The city skyline glittered at night."
+  },
+  {
+    "word": "clang",
+    "example": "The loud clang of the bell startled everyone."
+  },
+  {
+    "word": "clap",
+    "example": "The audience began to clap in appreciation."
+  },
+  {
+    "word": "class",
+    "example": "She attended a yoga class in the evening."
+  },
+  {
+    "word": "classmate",
+    "example": "He met his old classmate at the reunion."
+  },
+  {
+    "word": "classroom",
+    "example": "The students sat quietly in the classroom."
+  },
+  {
+    "word": "claw",
+    "example": "The cat extended its sharp claws."
+  },
+  {
+    "word": "clay",
+    "example": "The potter molded the clay into a beautiful vase."
+  },
+  {
+    "word": "clean",
+    "example": "She used a mop to clean the kitchen floor."
+  },
+  {
+    "word": "clear",
+    "example": "The sky was clear on a sunny day."
+  },
+  {
+    "word": "clearly",
+    "example": "He spoke clearly so everyone could understand."
+  },
+  {
+    "word": "clerk",
+    "example": "The clerk helped customers at the store."
+  },
+  {
+    "word": "clever",
+    "example": "The clever fox outsmarted the hunter."
+  },
+  {
+    "word": "click",
+    "example": "The sound of the camera click captured the moment."
+  },
+  {
+    "word": "cliff",
+    "example": "The daring climber scaled the steep cliff."
+  },
+  {
+    "word": "climb",
+    "example": "They decided to climb the mountain."
+  },
+  {
+    "word": "clip",
+    "example": "She used a hair clip to keep her hair in place."
+  },
+  {
+    "word": "cloak",
+    "example": "He wore a hooded cloak to stay warm."
+  },
+  {
+    "word": "clock",
+    "example": "The clock on the wall struck twelve."
+  },
+  {
+    "word": "close",
+    "example": "Please close the door behind you."
+  },
+  {
+    "word": "closet",
+    "example": "She organized her clothes in the closet."
+  },
+  {
+    "word": "cloth",
+    "example": "The table was covered with a white cloth."
+  },
+  {
+    "word": "clothes",
+    "example": "They donated clothes to the charity."
+  },
+  {
+    "word": "clothing",
+    "example": "She designed her own clothing line."
+  },
+  {
+    "word": "cloud",
+    "example": "The fluffy cloud floated across the sky."
+  },
+  {
+    "word": "cloudy",
+    "example": "The day turned cloudy with dark clouds."
+  },
+  {
+    "word": "clover",
+    "example": "The field was dotted with patches of clover."
+  },
+  {
+    "word": "clown",
+    "example": "The clown entertained the children with tricks."
+  },
+  {
+    "word": "club",
+    "example": "They formed a book club to discuss literature."
+  },
+  {
+    "word": "cluck",
+    "example": "The hen let out a loud cluck."
+  },
+  {
+    "word": "clump",
+    "example": "The trees grew in a dense clump."
+  },
+  {
+    "word": "coach",
+    "example": "The coach trained the team for the competition."
+  },
+  {
+    "word": "coal",
+    "example": "The furnace burned with hot coal."
+  },
+  {
+    "word": "coast",
+    "example": "The waves crashed against the rocky coast."
+  },
+  {
+    "word": "coat",
+    "example": "She wore a warm coat in the winter."
+  },
+  {
+    "word": "cobweb",
+    "example": "The abandoned house had cobwebs in every corner."
+  },
+  {
+    "word": "cocoon",
+    "example": "The caterpillar spun a protective cocoon."
+  },
+  {
+    "word": "cod",
+    "example": "The fisherman caught a large cod."
+  },
+  {
+    "word": "coffee",
+    "example": "They sat at the cafe"
+  },
+  {
+    "word": "coffeepot",
+    "example": "She brewed coffee in the old coffeepot."
+  },
+  {
+    "word": "coin",
+    "example": "He tossed a coin into the wishing well."
+  },
+  {
+    "word": "cold",
+    "example": "The ice cream was cold and refreshing."
+  },
+  {
+    "word": "collar",
+    "example": "The dog's collar had a shiny tag."
+  },
+  {
+    "word": "college",
+    "example": "She attended college to pursue her degree."
+  },
+  {
+    "word": "color",
+    "example": "The artist mixed different colors on the palette."
+  },
+  {
+    "word": "colored",
+    "example": "The children colored pictures with crayons."
+  },
+  {
+    "word": "colt",
+    "example": "The colt frolicked in the meadow."
+  },
+  {
+    "word": "column",
+    "example": "The ancient column stood tall in the ruins."
+  },
+  {
+    "word": "comb",
+    "example": "She used a comb to untangle her hair."
+  },
+  {
+    "word": "come",
+    "example": "They invited him to come over for dinner."
+  },
+  {
+    "word": "comfort",
+    "example": "The cozy blanket provided comfort."
+  },
+  {
+    "word": "comic",
+    "example": "She enjoyed reading comic books."
+  },
+  {
+    "word": "coming",
+    "example": "The train is coming into the station."
+  },
+  {
+    "word": "company",
+    "example": "He founded a successful software company."
+  },
+  {
+    "word": "compare",
+    "example": "She likes to compare prices before buying."
+  },
+  {
+    "word": "compass",
+    "example": "The compass pointed north."
+  },
+  {
+    "word": "complete",
+    "example": "He worked hard to complete the project."
+  },
+  {
+    "word": "completely",
+    "example": "I am completely satisfied with the results."
+  },
+  {
+    "word": "compost",
+    "example": "They used kitchen scraps for compost."
+  },
+  {
+    "word": "concern",
+    "example": "She expressed her concern for the environment."
+  },
+  {
+    "word": "concert",
+    "example": "The orchestra played a beautiful concert."
+  },
+  {
+    "word": "condition",
+    "example": "The car was in excellent condition."
+  },
+  {
+    "word": "cone",
+    "example": "They enjoyed ice cream in a waffle cone."
+  },
+  {
+    "word": "connect",
+    "example": "The bridge helped connect the two sides."
+  },
+  {
+    "word": "coo",
+    "example": "The dove let out a soft cooing sound."
+  },
+  {
+    "word": "cook",
+    "example": "She learned to cook from her grandmother."
+  },
+  {
+    "word": "cooked",
+    "example": "He preferred his steak to be cooked medium."
+  },
+  {
+    "word": "cookie",
+    "example": "She baked delicious chocolate chip cookies."
+  },
+  {
+    "word": "cooking",
+    "example": "They shared a passion for cooking."
+  },
+  {
+    "word": "cool",
+    "example": "The breeze provided a cool relief."
+  },
+  {
+    "word": "cooler",
+    "example": "He packed drinks in the cooler for the trip."
+  },
+  {
+    "word": "coon",
+    "example": "The raccoon scavenged for food at night."
+  },
+  {
+    "word": "coop",
+    "example": "They built a coop for their backyard chickens."
+  },
+  {
+    "word": "copper",
+    "example": "The antique vase was made of copper."
+  },
+  {
+    "word": "copy",
+    "example": "She made a copy of the document."
+  },
+  {
+    "word": "cord",
+    "example": "The curtains were tied back with a cord."
+  },
+  {
+    "word": "core",
+    "example": "She sliced the apple and removed the core."
+  },
+  {
+    "word": "corn",
+    "example": "The farmer harvested fields of golden corn."
+  },
+  {
+    "word": "corner",
+    "example": "The cat curled up in the corner."
+  },
+  {
+    "word": "correct",
+    "example": "Make sure your answers are correct."
+  },
+  {
+    "word": "cost",
+    "example": "The total cost of the project was high."
+  },
+  {
+    "word": "cot",
+    "example": "He slept on a small cot during the camping trip."
+  },
+  {
+    "word": "cottage",
+    "example": "They rented a charming cottage by the lake."
+  },
+  {
+    "word": "cotton",
+    "example": "The soft fabric was made of pure cotton."
+  },
+  {
+    "word": "couch",
+    "example": "They relaxed on the comfortable couch."
+  },
+  {
+    "word": "cough",
+    "example": "She had a persistent cough."
+  },
+  {
+    "word": "could",
+    "example": "He could swim across the lake."
+  },
+  {
+    "word": "couldn't",
+    "example": "She couldn't believe her eyes."
+  },
+  {
+    "word": "count",
+    "example": "The teacher asked the students to count to ten."
+  },
+  {
+    "word": "country",
+    "example": "They traveled to a foreign country."
+  },
+  {
+    "word": "county",
+    "example": "The county fair featured games and rides."
+  },
+  {
+    "word": "course",
+    "example": "She completed a course in photography."
+  },
+  {
+    "word": "court",
+    "example": "The basketball court was busy with players."
+  },
+  {
+    "word": "cousin",
+    "example": "She visited her cousin during the holidays."
+  },
+  {
+    "word": "coward",
+    "example": "He was labeled a coward for running away."
+  },
+  {
+    "word": "cowardice",
+    "example": "The act of fleeing showed his cowardice."
+  },
+  {
+    "word": "cowardly",
+    "example": "His cowardly actions disappointed everyone."
+  },
+  {
+    "word": "cows",
+    "example": "The cows grazed peacefully in the pasture."
+  },
+  {
+    "word": "crack",
+    "example": "The thunder made a loud crack."
+  },
+  {
+    "word": "crackers",
+    "example": "She served cheese and crackers at the party."
+  },
+  {
+    "word": "cradle",
+    "example": "The baby slept peacefully in the cradle."
+  },
+  {
+    "word": "cramps",
+    "example": "She had stomach cramps after eating."
+  },
+  {
+    "word": "cranberry",
+    "example": "They made cranberry sauce for Thanksgiving."
+  },
+  {
+    "word": "crank",
+    "example": "He turned the crank to start the engine."
+  },
+  {
+    "word": "crash",
+    "example": "The car crash caused a traffic jam."
+  },
+  {
+    "word": "crawl",
+    "example": "The baby learned to crawl before walking."
+  },
+  {
+    "word": "crazy",
+    "example": "His crazy ideas always surprised everyone."
+  },
+  {
+    "word": "cream",
+    "example": "She added a dollop of cream to her coffee."
+  },
+  {
+    "word": "creamy",
+    "example": "The soup had a rich and creamy texture."
+  },
+  {
+    "word": "creek",
+    "example": "The babbling creek flowed through the forest."
+  },
+  {
+    "word": "creep",
+    "example": "The spider started to creep towards her."
+  },
+  {
+    "word": "crept",
+    "example": "He crept silently through the dark alley."
+  },
+  {
+    "word": "cried",
+    "example": "The baby cried for attention."
+  },
+  {
+    "word": "cries",
+    "example": "The night echoed with the cries of wolves."
+  },
+  {
+    "word": "crime",
+    "example": "The detective solved the mysterious crime."
+  },
+  {
+    "word": "criminal",
+    "example": "The criminal was arrested for theft."
+  },
+  {
+    "word": "critic",
+    "example": "The art critic reviewed the new exhibition."
+  },
+  {
+    "word": "croak",
+    "example": "The frog let out a croak in the pond."
+  },
+  {
+    "word": "crook",
+    "example": "The old tree had a crook in its trunk."
+  }
+]

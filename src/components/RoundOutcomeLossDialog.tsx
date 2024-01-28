@@ -44,7 +44,7 @@ export default function RoundOutcomeLossDialog() {
             The word was <b>{currentWord?.word}</b>
           </Text>
           <Text fontStyle={"italic"}>
-            "{currentWord?.context}"
+            "{currentWord?.example}"
           </Text>
         </Box>
         

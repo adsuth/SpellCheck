@@ -4,7 +4,7 @@ import { RoundTime, SpellCheckWord } from "./definitions";
 export function formatWordContextForSpeech( currentWord: SpellCheckWord )
 {
   if ( currentWord === null ) return ""
-  return `${currentWord.word}; as in: "${currentWord.context.replace( currentWord.word, `*${currentWord.word}*` )}"`
+  return `${currentWord.word}; as in: "${currentWord.example.replace( currentWord.word, `*${currentWord.word}*` )}"`
 }
 
 /**

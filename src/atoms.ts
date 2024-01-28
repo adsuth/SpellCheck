@@ -8,6 +8,7 @@ export const gameWordsAtom    = atom<SpellCheckWord[]>([])
 export const currentWordAtom  = atom<SpellCheckWord | null>(null)
 export const roundNumberAtom  = atom<number>( 0 )
 export const gameStateAtom    = atom<GameState>( GameState.ONGOING )
+export const gameInputShownAtom    = atom<boolean>( false )
 
 export const roundTimeAtom   = atom<number>( START_TIME )
 export const roundOutcomeStateAtom = atom<RoundOutcomeState>( RoundOutcomeState.ONGOING )

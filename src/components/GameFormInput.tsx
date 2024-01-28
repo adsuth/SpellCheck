@@ -1,7 +1,7 @@
 import { Center, FormControl, FormErrorMessage, HStack, Stack} from "@chakra-ui/react"
 
 import { Button, FormLabel, Input, Flex, Divider } from "@chakra-ui/react";
-import { useEffect, useRef, useState } from "react";
+import { MutableRefObject, useEffect, useRef, useState } from "react";
 import CurrentWordAudioPlayer from "./CurrentWordAudioPlayer";
 import { useAtom } from "jotai";
 import { allWordsAtom, currentWordAtom, hasAudioPlayedOnceAtom, roundNumberAtom, roundOutcomeStateAtom as roundOutcomeStateAtom } from "../atoms";
@@ -22,7 +22,9 @@ export default function GameFormInput() {
   // guarantees focus on the input when enabled
   useEffect( () => {
     if ( !hasAudioPlayedOnce ) return
-    _inputRef?.current.focus()
+    const input = _inputRef?.current as HTMLInputElement | null
+    if ( input !== null ) input.focus()
+
   }, [ hasAudioPlayedOnce ] )
 
   function onAnswerSubmit() {

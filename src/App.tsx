@@ -1,6 +1,6 @@
-import { Alert, Center, Stack, VStack } from "@chakra-ui/react"
+import { Alert, Center, Slide, SlideFade, Stack, VStack } from "@chakra-ui/react"
 import { useAtom } from "jotai"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { allWordsAtom, currentWordAtom, gameStateAtom, gameTotalRoundCountAtom, gameWordsAtom, roundNumberAtom, roundOutcomeStateAtom, totalPointsAtom } from "./atoms"
 import GameHeader from "./components/GameHeader"
 import GameBody from "./components/GameBody"
@@ -8,6 +8,10 @@ import SiteHeader from "./components/SiteHeader"
 import { GameState, RoundOutcomeState } from "./definitions"
 import { randomSample } from "./utils"
 import { TOTAL_ROUND_COUNT } from "./declarations"
+import ALL_WORDS from "./assets/words.json"
+import GameFormInput from "./components/GameFormInput"
+import RoundOutcomeWinDialog from "./components/RoundOutcomeWinDialog"
+import RoundOutcomeLossDialog from "./components/RoundOutcomeLossDialog"
 
 
 function App() 
@@ -24,12 +28,7 @@ function App()
 
   // todo: fetch words from file, store in atom
   useEffect( () => { 
-    const dummyWords = [
-      { word: "loose", context: "a loose thread" },
-      { word: "concede", context: "to concede defeat" },
-      { word: "idolize", variations: ["idolise"], context: "children idolise their heroes" },
-    ]
-    setAllWords( dummyWords )
+    setAllWords( ALL_WORDS )
   }, [] )
 
   // ! - error handle for getting words
