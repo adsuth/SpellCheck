@@ -42,3 +42,7 @@ export enum ModifierKeyType {
   CONTROL,
   ALT,
 }
+
+export interface LocalStorageType {
+  shouldShowFirstTimeStartupDialog: boolean
+}

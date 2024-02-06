@@ -39,7 +39,6 @@ export default function GameContinueButton() {
     if ( gameState === GameState.ENDED )
     {
       setGameState( GameState.NEW )
-      console.log( "Set state of Game to NEW" )
       return
     }
 

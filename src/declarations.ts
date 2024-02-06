@@ -1,7 +1,7 @@
-import { KeybindsMap, RoundTime } from "./definitions"
+import { KeybindsMap, LocalStorageType, RoundTime } from "./definitions"
 
 export const TOTAL_ROUND_COUNT     = 10
-export const ROUND_TIME            = 3 // if you want to make this variable, change all instances of use
+export const ROUND_TIME            = 15 // if you want to make this variable, change all instances of use
 export const START_TIME            = 0
 export const BASE_POINTS           = 100
 export const BASE_POINT_MODIFIER   = 25
@@ -20,4 +20,8 @@ export const KEYBINDS: KeybindsMap = {
   restartGame: {
     code: "Escape",
   }
+}
+
+export const DEFAULT_LOCAL_STORAGE: LocalStorageType = {
+  shouldShowFirstTimeStartupDialog: true
 }

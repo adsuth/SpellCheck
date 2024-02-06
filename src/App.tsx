@@ -1,18 +1,15 @@
 import { Alert, Center, Slide, SlideFade, Stack, VStack } from "@chakra-ui/react"
 import { useAtom } from "jotai"
 import { useEffect, useState } from "react"
-import { allWordsAtom, currentWordAtom, gameStateAtom, gameTotalRoundCountAtom, gameWordsAtom, roundNumberAtom, roundOutcomeStateAtom, totalPointsAtom } from "./atoms"
+import { allWordsAtom, currentWordAtom, gameStateAtom, gameTotalRoundCountAtom, gameWordsAtom, localStorageAtom, roundNumberAtom, roundOutcomeStateAtom, totalPointsAtom } from "./atoms"
 import GameHeader from "./components/GameHeader"
 import GameBody from "./components/GameBody"
 import SiteHeader from "./components/SiteHeader"
 import { GameState, RoundOutcomeState } from "./definitions"
 import { randomSample } from "./utils"
-import { TOTAL_ROUND_COUNT } from "./declarations"
+import { DEFAULT_LOCAL_STORAGE, TOTAL_ROUND_COUNT } from "./declarations"
 import ALL_WORDS from "./assets/words.json"
-import GameFormInput from "./components/GameFormInput"
-import RoundOutcomeWinDialog from "./components/RoundOutcomeWinDialog"
-import RoundOutcomeLossDialog from "./components/RoundOutcomeLossDialog"
-
+import FirstTimeInfoModal from "./components/FirstTimeInfoModal"
 
 function App() 
 {
@@ -25,10 +22,20 @@ function App()
 
   const [ roundNumber, setRoundNumber ] = useAtom( roundNumberAtom )
   const [ totalPoints, setTotalPoints ] = useAtom( totalPointsAtom )
+  const [ storage, setStorage ]         = useAtom( localStorageAtom )
+
+  useEffect( () => {
+    if ( storage === null ) return
+    localStorage.setItem( "storage", JSON.stringify( storage ) )
+  }, [ storage ] )
 
   // todo: fetch words from file, store in atom
   useEffect( () => { 
     setAllWords( ALL_WORDS )
+
+    localStorage.clear() // ! - for testing!!
+    const storageJsonString = localStorage.getItem( "storage" )
+    setStorage( storageJsonString !== null ? JSON.parse( storageJsonString ) : DEFAULT_LOCAL_STORAGE )
   }, [] )
 
   // ! - error handle for getting words
@@ -44,12 +51,14 @@ function App()
 
   // handle new game generation
   useEffect( () => {
+    console.log( {gameState, roundOutcomeState, gameWords, allWords} )
     if ( gameState !== GameState.NEW ) return
-
+    
     // resets
     setRoundNumber( 0 )
     setTotalPoints( 0 )
     setRoundOutcomeState( RoundOutcomeState.ONGOING )
+    setGameState( GameState.ONGOING )
 
   }, [ gameState ] )
 
@@ -59,20 +68,21 @@ function App()
     if ( roundOutcomeState !== RoundOutcomeState.ONGOING ) return
     if ( gameWords.length === 0 ) return
 
-    console.log( {roundNumber, gameWords} )
-
     setCurrentWord( gameWords[ roundNumber ] )
   }, [ gameState, roundOutcomeState, gameWords ] )
 
   return (
     <Center>
       <VStack spacing={1}>
+        <FirstTimeInfoModal />
+        
         <SiteHeader />
         <GameHeader />
         <GameBody />
         <Alert colorScheme="orange">
           Testing: word is "{currentWord?.word}"
         </Alert>
+
       </VStack>
     </Center>
   )

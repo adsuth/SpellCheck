@@ -1,6 +1,6 @@
 import { atom } from "jotai";
-import { GameState, RoundOutcomeState, RoundTime, SpellCheckWord, TimerState } from "./definitions";
-import { ROUND_TIME, START_TIME, TOTAL_ROUND_COUNT } from "./declarations";
+import { GameState, LocalStorageType, RoundOutcomeState, RoundTime, SpellCheckWord, TimerState } from "./definitions";
+import { DEFAULT_LOCAL_STORAGE, ROUND_TIME, START_TIME, TOTAL_ROUND_COUNT } from "./declarations";
 
 export const allWordsAtom     = atom<SpellCheckWord[]>([])
 export const gameWordsAtom    = atom<SpellCheckWord[]>([])
@@ -18,6 +18,8 @@ export const totalPointsAtom  = atom<number>( 0 )
 export const timerStateAtom   = atom<TimerState>(TimerState.STOPPED)
 export const hasAudioPlayedOnceAtom   = atom<boolean>(false)
 export const roundTimerIdAtom = atom<number | null>( null )
+export const localStorageAtom = atom<LocalStorageType | null>( null )
+export const modalIsOpenAtom = atom<boolean>( true )
 
 export const roundStartTimestampAtom = atom<number>( 0 )
 
