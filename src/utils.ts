@@ -4,7 +4,7 @@ import { RoundTime, SpellCheckWord } from "./definitions";
 export function formatWordContextForSpeech( currentWord: SpellCheckWord )
 {
   if ( currentWord === null ) return ""
-  return `${currentWord.word}; as in: "${currentWord.example.replace( currentWord.word, `*${currentWord.word}*` )}"`
+  return `${currentWord.word}; as in: "${currentWord.example.replace( currentWord.word, `${currentWord.word}` )}"`
 }
 
 /**
@@ -41,7 +41,6 @@ export function wasUserCorrect( userInput: string, currentWord: SpellCheckWord )
   if ( currentWord.variations !== undefined )
     accepted = [ ...accepted, ...currentWord.variations ]
 
-  console.log( `wasUserCorrect: Accepted ${accepted}` )
   
   for ( const word of accepted )
     if ( compareStrings( word, userInput ) )

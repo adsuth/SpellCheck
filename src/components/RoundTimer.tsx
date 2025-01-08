@@ -1,6 +1,6 @@
 import { useAtom } from 'jotai'
 import React, { useEffect } from 'react'
-import { currentWordAtom, roundOutcomeStateAtom, roundTimeAtom, roundTimerIdAtom, timerStateAtom } from '../atoms'
+import { currentWordAtom, gameTotalRoundWonAtom, roundOutcomeStateAtom, roundTimeAtom, roundTimerIdAtom, timerStateAtom } from '../atoms'
 import { Text } from '@chakra-ui/react'
 import { ROUND_TIME, START_TIME } from '../declarations'
 import { RoundOutcomeState, TimerState } from '../definitions'
@@ -11,6 +11,7 @@ export default function RoundTimer() {
   const [ timerState, setTimerState ] = useAtom( timerStateAtom )  
   const [ timerIntervalId, setTimerIntervalId ] = useAtom( roundTimerIdAtom )
   const [ roundOutcomeState, setRoundOutcomeState ] = useAtom( roundOutcomeStateAtom )
+  const [ roundWonCount, setRoundWonCount ] = useAtom( gameTotalRoundWonAtom )
 
   useEffect( () => {
     if ( ROUND_TIME - time !== 0 ) return
@@ -19,6 +20,9 @@ export default function RoundTimer() {
   }, [ time ] )
 
   useEffect( () => {
+    if ( roundOutcomeState === RoundOutcomeState.WIN )
+      setRoundWonCount( roundWonCount + 1 )
+
     if ( roundOutcomeState === RoundOutcomeState.ONGOING ) return
     setTimerState( TimerState.PAUSED )
   }, [ roundOutcomeState ] )
@@ -47,8 +51,9 @@ export default function RoundTimer() {
 
   }, [ timerState ] )
 
+  const color = ROUND_TIME - time > 5 ? "unset" : "#ff0000"
   return (
-    <Text color="#ff0000">
+    <Text color={ color }>
       :{ROUND_TIME - time}s
     </Text>
   )

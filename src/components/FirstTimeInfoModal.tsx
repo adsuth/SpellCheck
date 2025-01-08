@@ -13,7 +13,7 @@ export default function FirstTimeInfoModal() {
   
   useEffect( () => {
     if ( hasSettingRetrieved ) return
-    if ( storage === null ) return console.error( "Storage was NULL" )
+    if ( storage === null ) return
     
     setIsOpen( storage.shouldShowFirstTimeStartupDialog )
     setHasRetrieved( true )
@@ -29,8 +29,6 @@ export default function FirstTimeInfoModal() {
     setIsOpen( false )
     setStorage( { ...storage, shouldShowFirstTimeStartupDialog } )
   }
-
-  // todo - change the color="red" to a proper color declaration
 
   return (
     <Modal isOpen={isOpen} onClose={onClose}>

@@ -1,7 +1,7 @@
 import { Alert, Center, Slide, SlideFade, Stack, VStack } from "@chakra-ui/react"
 import { useAtom } from "jotai"
 import { useEffect, useState } from "react"
-import { allWordsAtom, currentWordAtom, gameStateAtom, gameTotalRoundCountAtom, gameWordsAtom, localStorageAtom, roundNumberAtom, roundOutcomeStateAtom, totalPointsAtom } from "./atoms"
+import { allWordsAtom, currentWordAtom, gameStateAtom, gameTotalRoundCountAtom, gameTotalRoundWonAtom, gameWordsAtom, localStorageAtom, roundNumberAtom, roundOutcomeStateAtom, totalPointsAtom } from "./atoms"
 import GameHeader from "./components/GameHeader"
 import GameBody from "./components/GameBody"
 import SiteHeader from "./components/SiteHeader"
@@ -19,6 +19,7 @@ function App()
   const [ roundOutcomeState, setRoundOutcomeState ] = useAtom( roundOutcomeStateAtom )
   const [ currentWord, setCurrentWord ] = useAtom( currentWordAtom )
   const [ totalRoundCount, setTotalRoundCount ] = useAtom( gameTotalRoundCountAtom )
+  const [ roundWins, setRoundWins ] = useAtom( gameTotalRoundWonAtom )
 
   const [ roundNumber, setRoundNumber ] = useAtom( roundNumberAtom )
   const [ totalPoints, setTotalPoints ] = useAtom( totalPointsAtom )
@@ -32,8 +33,7 @@ function App()
   // todo: fetch words from file, store in atom
   useEffect( () => { 
     setAllWords( ALL_WORDS )
-
-    localStorage.clear() // ! - for testing!!
+    // localStorage.clear() // ! - for testing!!
     const storageJsonString = localStorage.getItem( "storage" )
     setStorage( storageJsonString !== null ? JSON.parse( storageJsonString ) : DEFAULT_LOCAL_STORAGE )
   }, [] )
@@ -44,19 +44,19 @@ function App()
     if ( gameState === GameState.ENDED ) return
 
     const newTotalRoundCount = ( allWords.length < TOTAL_ROUND_COUNT ) ? allWords.length : TOTAL_ROUND_COUNT 
-    setTotalRoundCount( newTotalRoundCount )
     setGameWords( randomSample( allWords, newTotalRoundCount ) )
 
   }, [ allWords, gameState ] )
 
   // handle new game generation
   useEffect( () => {
-    console.log( {gameState, roundOutcomeState, gameWords, allWords} )
+    // console.log( {gameState, roundOutcomeState, gameWords, allWords} )
     if ( gameState !== GameState.NEW ) return
     
     // resets
     setRoundNumber( 0 )
     setTotalPoints( 0 )
+    setRoundWins( 0 )
     setRoundOutcomeState( RoundOutcomeState.ONGOING )
     setGameState( GameState.ONGOING )
 
@@ -79,9 +79,9 @@ function App()
         <SiteHeader />
         <GameHeader />
         <GameBody />
-        <Alert colorScheme="orange">
+        {/* <Alert colorScheme="orange">
           Testing: word is "{currentWord?.word}"
-        </Alert>
+        </Alert> */}
 
       </VStack>
     </Center>

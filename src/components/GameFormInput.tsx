@@ -43,7 +43,8 @@ export default function GameFormInput() {
   }
 
   function onInputEnterKey(key: string) {
-    if (key !== "Enter") return;
+    if (key !== "Enter") return
+    if ( _inputRef?.current!.value === "" ) return
     onAnswerSubmit();
   }
 
@@ -56,7 +57,7 @@ export default function GameFormInput() {
           </Center>
 
           <Center width={"50px"}>
-            <Divider orientation='vertical' />
+            <Divider orientation="vertical" />
           </Center>
 
           <Center>

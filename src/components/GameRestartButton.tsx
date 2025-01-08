@@ -36,7 +36,6 @@ export default function GameRestartButton() {
   {
     // after end screen
     setGameState( GameState.NEW )
-    console.log( "Restarted Game" )
   }
 
   return (

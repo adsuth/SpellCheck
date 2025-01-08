@@ -2,13 +2,14 @@ import { Alert, Box, Text, VStack } from "@chakra-ui/react"
 import React, { useState } from 'react'
 import GameContinueButton from "./GameContinueButton"
 import { useAtom } from "jotai"
-import { gameTotalRoundCountAtom, totalPointsAtom } from "../atoms"
+import { gameTotalRoundCountAtom, gameTotalRoundWonAtom, totalPointsAtom } from "../atoms"
 import { ROUND_TIME, TOTAL_ROUND_COUNT } from "../declarations"
 import { pointsFormula } from "../utils"
 
 export default function GameOutcomeDialog() {
   const [ totalPoints ] = useAtom( totalPointsAtom )
   const [ totalRoundCount ] = useAtom( gameTotalRoundCountAtom )
+  const [ roundWonCount ] = useAtom( gameTotalRoundWonAtom )
   
   const [ possiblePoints ] = useState( pointsFormula( 0 ) * totalRoundCount )
   
@@ -37,7 +38,7 @@ export default function GameOutcomeDialog() {
             You got <b>{totalPoints} / {possiblePoints}</b> points
           </Text>
           <Text>
-            You answered <b>X / {totalRoundCount}</b> correctly
+            You answered <b>{roundWonCount} / {totalRoundCount}</b> correctly
           </Text>
         </Box>
         <Text>

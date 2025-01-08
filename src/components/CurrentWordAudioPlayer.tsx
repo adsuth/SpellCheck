@@ -7,7 +7,6 @@ import { KEYBINDS } from '../declarations'
 import { RoundOutcomeState, TimerState } from '../definitions'
 import { IoMdVolumeHigh } from "react-icons/io";
 
-
 export default function CurrentWordAudioPlayer() {
   const [ currentWord ] = useAtom( currentWordAtom )
   const [ roundStartTimestamp, setRoundStartTimestamp ] = useAtom( roundStartTimestampAtom )
@@ -18,6 +17,8 @@ export default function CurrentWordAudioPlayer() {
   const [ audioPlaying, setAudioPlaying ] = useState( false )
   const [ hasAudioPlayedOnce, setHasAudioPlayedOnce ] = useAtom( hasAudioPlayedOnceAtom )
   const _playAudioButton = useRef( null )
+  const [ voice, setVoice ] = useState(null)
+  const [ voiceList, setVoiceList ] = useState(null)
 
   function handleKeyBinds( e: KeyboardEvent )
   {
@@ -29,6 +30,22 @@ export default function CurrentWordAudioPlayer() {
       if ( audioButton !== null ) audioButton.click()
     }
   }
+
+  // on init, get voices
+  useEffect( () => {
+    window.speechSynthesis.addEventListener( "voiceschanged", () => {
+      const voxes = window.speechSynthesis.getVoices()
+      setVoiceList( voxes )
+    } )
+  }, [] )
+  
+  // once loaded voice list, set the voice
+  useEffect( () => {
+    if ( !voiceList ) return
+    if ( voiceList.length === 0 ) return
+    const vox = voiceList.find( voice => voice.name === 'Google US English' )
+    setVoice( vox )
+  }, [voiceList] )
 
   /** Handle round ending */
   useEffect( () => {
@@ -52,6 +69,7 @@ export default function CurrentWordAudioPlayer() {
     setHasAudioPlayedOnce( true )
 
     const utterThis = new SpeechSynthesisUtterance( formatWordContextForSpeech( currentWord ) )
+    utterThis.voice = voice
     utterThis.addEventListener( "end", () => {
       setAudioPlaying( false )
     } )

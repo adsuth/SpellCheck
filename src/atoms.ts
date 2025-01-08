@@ -23,5 +23,5 @@ export const modalIsOpenAtom = atom<boolean>( true )
 
 export const roundStartTimestampAtom = atom<number>( 0 )
 
-
+export const gameTotalRoundWonAtom = atom<number>( 0 )
 export const gameTotalRoundCountAtom = atom<number>( TOTAL_ROUND_COUNT )
