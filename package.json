@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "echo 'adsuth.com/spellcheck' > ./dist/CNAME && gh-pages -d dist",
+    "deploy": "echo 'adsuth.com' > ./dist/CNAME && gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
