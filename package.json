@@ -1,5 +1,6 @@
 {
   "name": "spellcheck",
+  "homepage": "https://adsuth.com/spellcheck",
   "private": true,
   "version": "1.0.0",
   "type": "module",
